@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .start img{
+       opacity: 20px;
+    }
+    .start h1{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: -2px;
+        color: white;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    li{
+      margin-left: 20px;
+      position: relative;
+      bottom: 950px;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    li:hover{
+        color: black;
+    }
+    .call{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 55px;
+       right: 300px;
+    
+       border-radius: 50px;
+       color: white;
+    }
+    p{
+        position: absolute;
+        right: 200px;
+        top: 60px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        right: 250px;
+        top: 200px;
+        font-size: 60px;
+        color: white;
+    }
+    .start .para{
+        position: absolute;
+        right: 180px;
+        top:450px;
+      
+        font-size: 20px;
+        color: white;
+    }
+    .our{
+        position: absolute;
+        right: 510px;
+        top:600px;
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: rgb(19, 134, 201);
+        border:rgb(19, 134, 201);;
+        border-radius: 7px;
+    }
+    .us{
+        position: absolute;
+        right: 335px;
+        top:600px;
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+       border-radius: 7px;
+       background-color: rgb(39, 36, 36)
+              
+    }
+    .us:hover{
+        background-color: white;
+        color: black;
+    }
+    .men{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(41, 39, 39);
+       position: absolute;
+       top:1000px;
+    }
+    .men h1{
+        position: absolute;
+        top: 100px;
+        left: 120px;
+        font-size: 50px;
+        color: white;}
+    .men p{
+color: white;
+margin-top: 150px;
+margin-right: 840px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .b{
+       margin-top: 400px;
+       margin-left: 120px;
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: rgb(19, 134, 201);
+        border:rgb(19, 134, 201);;
+        border-radius: 7px;
+    }
+    .black{
+        width: 50vw;
+        height: 35vh;
+        background-color: black;
+        float: right;
+        margin-top: 430px;
+    }
+    .men img{
+        position: relative;
+        left: 900px;
+        bottom: 400px;
+        
+    }
+  .a{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 31, 31);
+    margin-top: 650px;
+  }
+  #ha{
+    color: white;
+    margin-left: 100px;
+   margin-top: 700px;
+   position: relative;
+   top: 100px;
+   font-size: 50px;
+  }
+  .a .co{
+    font-size: 30px;
+   
+    color: white;
+position: absolute;
+top: 2000px;
+left: 120px;
+  }
+  .a .m{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2050px;
+left: 120px;
+  }
+  .leg{
+    font-size: 30px;
+   
+   color: white;
+position: absolute;
+top: 2000px;
+left: 550px;
+  }
+  .a .u{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2050px;
+left: 550px;
+  }
+  .a .com{
+    font-size: 30px;
+   
+   color: white;
+position: absolute;
+top: 2000px;
+left: 1000px;
+  }
+  .a .n{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2050px;
+left: 1000px;
+  }
+  .a .ide{
+    font-size: 30px;
+   
+   color: white;
+position: absolute;
+top: 2300px;
+left: 120px;}
+.a .i{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2350px;
+left: 120px;
+  }
+  .hall{
+    font-size: 30px;
+   
+   color: white;
+position: absolute;
+top: 2300px;
+left: 550px;
+  }
+  .a .z{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2350px;
+left: 550px;
+  }
+  .a .law{
+    font-size: 30px;
+   
+   color: white;
+position: absolute;
+top: 2300px;
+left: 1000px;
+  }
+  .a .sma{
+    font-size: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+position: absolute;
+top: 2350px;
+left: 1000px;
+  }
+  .five{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(20, 19, 19);
+  }
+.five .sec{
+    font-size: 50px;
+    color: white;
+  position:relative ;
+  top: 100px;
+  left: 100px;
+   
+}
+.five  img{
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 45%;
+    height: 50%;
+   
+}
+.five .six{
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+  position:relative ;
+  top: 100px;
+  left: 100px;
+float: right;
+margin-right: 550px;
+margin-top: 100px;
+
+}
+.five .four{
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+position: relative;
+left: 985px;
+bottom: 300px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.five .read{
+    
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: rgb(19, 134, 201);
+        border:rgb(19, 134, 201);;
+        border-radius: 7px;
+       position: absolute;
+       right: 420px;
+       top: 3000px;
+}
+.inves{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(29, 27, 27);
+}
+.inves .one{
+    font-size: 15px;
+    color: white;
+    margin-left: 300px;
+    position: relative;
+    top: 50px;
+    text-decoration: underline;
+}
+.inves .two{
+    font-size: 15px;
+    color: white;
+    margin-left: 700px;
+    position: relative;
+    top: 35px;
+}
+.inves .four{
+    font-size: 15px;
+    color: white;
+    margin-left: 1100px;
+    position: relative;
+    top: 15px;
+}
+.four:hover{
+    text-decoration: underline;
+}    
+.one:hover{
+    text-decoration: underline;
+}    
+.two:hover{
+    text-decoration: underline;
+}    
+.inves .step1{
+    font-size: 50px;
+    color: white;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.inves .step2{
+    font-size:15px;
+    color: rgb(165, 155, 155);
+    margin-left: 200px;
+    margin-top: 30px; 
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inves .step3{
+    font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: rgb(19, 134, 201);
+        border:rgb(19, 134, 201);;
+        border-radius: 7px;
+        margin-top: 50px;
+        margin-left: 200px;
+}
+   .inves img{
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin-right: 150px;
+    position: relative;
+    bottom: 150px;
+   }
+   
+   
+   
+</style>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<body>
+    <div class="start">
+        <img src="page" alt="">
+        <h1>Solicitor</h1>
+
+        <ul>
+            <li>Home</li>
+            <li>Practicing Area</li>
+            <li>Service</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+        <ion-icon name="call" class="call"></ion-icon>
+        <p>123-489-9381</p>
+        <h2>Meet all your <br> investigative and <br> litigation needs</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur  Voluptate a cupiditate <br>provident dolor veritatis? Quis.</p>
+        <button class="our">Our Service ></button>
+        <button class="us">Contact us ></button>
+    </div>
+
+<div class="men">
+<h1>I'm Jon Campbell</h1>
+<p>Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia, there live the blind texts. Separated they <br> live in Bookmarksgrove right at the coast of the Semantics, a large <br> language ocean.
+<br>
+<br>
+    A small river named Duden flows by their place and supplies it with  <br>he necessary regelialia. It is a paradisematic country, in which <br> roasted parts of sentences fly into your mouth.</p>
+    <button class="b">Contact us ></button>
+    <div class="black"> </div>
+<img src="img" alt="">
+</div>
+
+
+
+<div class="a">
+<h1 id="ha">Our Service</h1>
+<p class="co"> Councel</p>
+<p class="m">A small river named Duden flows by their place and supplies it <br>with the necessary regelialia. It is a paradisematic country, in <br> which roasted parts of sentences fly into your mouth.</p>
+<p class="leg">Legal Dept</p>
+<p class="u">A small river named Duden flows by their place and supplies it <br>with the necessary regelialia. It is a paradisematic country, in <br> which roasted parts of sentences fly into your mouth.</p>
+<p class="com">Compliance</p>
+<p class="n">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in  which roasted parts of sentences fly into your mouth.</p>
+<p class="ide">Identity</p>
+<p class="i">A small river named Duden flows by their place and supplies it <br> with the necessary regelialia. It is a paradisematic country, in  <br> which roasted parts of sentences fly into your mouth.</p>
+<p class="hall">Hall of Justice</p>
+<p class="z">A small river named Duden flows by their place and supplies it <br>with the necessary regelialia. It is a paradisematic country, in <br> which roasted parts of sentences fly into your mouth.</p>
+<p class="law">Law Abiding</p>
+<p class="sma">A small river named Duden flows by their place and supplies it <br>with the necessary regelialia. It is a paradisematic country, in <br> which roasted parts of sentences fly into your mouth.</p>
+</div>
+
+<div class="five">
+   <h5 class="sec">Security Consultants</h5>
+   <img src="hamer" alt="">
+   <h6 class="six">Justice serves</h6>
+   <h4 class="four">A small river named Duden flows by their place and supplies it with <br>the necessary regelialia. It is a paradisematic country, in which <br>roasted parts of sentences fly into your mouth. Far far away, <br> behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</h4>
+<button class="read">Read more  ></button>
+</div>
+
+<div class="inves">
+  <h1 class="one">  Investigative Services</h1>
+  <h3 class="two">Security Consultations</h3>
+  <h4 class="four">Criminal Defense Investigations</h4>
+  <h1 class="step1">Investigative <br> Services</h1>
+  <h1 class="step2">A small river named Duden flows by their place <br>and supplies it with the necessary regelialia.</h1>
+  <button class="step3">Read more ></button>
+  <img src="page" alt="" >
+</div>
+
+
+
+
+
+</body>
+</html>
